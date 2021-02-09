@@ -21,7 +21,8 @@ def translate(text, source_language, target_language):
             time.sleep(2)
             translation = text_field.get_attribute('value')
             break
-
+    driver.quit()
     return translation
+
 
 print(translate("Hello world", 'en', 'zh'))
